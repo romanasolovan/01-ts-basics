@@ -1,14 +1,17 @@
 {
   "name": "01-ts-basics",
+  "homepage": "https://github.com/romanasolovan/01-ts-basics.git",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build --base=/01-ts-basics/",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "prettier": "^3.6.2",
     "typescript": "~5.8.3",
     "vite": "^7.0.4"
